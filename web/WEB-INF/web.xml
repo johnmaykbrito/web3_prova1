@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <param-name>disciplinas</param-name>
+        <param-value>A,B,C,D,E,F,NULO,BRANCO</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/Index</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Script</servlet-name>
+        <jsp-file>/index.js</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Script</servlet-name>
+        <url-pattern>/Script</url-pattern>
+    </servlet-mapping>
+</web-app>
